@@ -26,6 +26,12 @@ def name_to_number(name):
     elif name == " Paper":
         return 5
     else:
+        # I would definite try to make the code throw here.
+        # meaning, if it wasn't one of these values, then it
+        # should fail.
+        # However, I think that you should skip that and go learn
+        # what a 'dict' is in python.  I think you might be
+        # surprised how much that will simplify this code.
         return " BAKKA!"
 
     # convert name to number using if/elif/else
@@ -45,6 +51,9 @@ def number_to_name(number):
     elif number == 5:
         return "Paper"
     else:
+        # Once again see the above notes.
+        # The code should die.
+        # Read about dict (dictionaries)
         return "YA FOOL!"
     
     # convert number to a name using if/elif/else
@@ -60,7 +69,12 @@ def rpsls(player_choice):
     comp_number = random.randrange(1, 5)
     
     comp_choice = number_to_name(comp_number)
-    print "Computer chooses " + comp_choice
+    print "Computer chooses " + comp_choic
+    
+    # I'm assuming that you havent done the rest here, which is cool.  Note that
+    # above, the variable 'comp_choic' should be 'comp_choice'.  One of the most
+    # valuable skills you will have programming is understanding syntax errors
+    # when you run a program.
     
     
 
